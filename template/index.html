@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>
+    <center>Sentiment Analysis
+    </center>
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <h1>
+    Sentiment Analysis App
+    
+    </h1>
+    <br>
+    <form  method="POST">
+        <b>
+	<center>Type a sentence, click on the submit button and wait for your prediction
+	</center>
+	</b>
+	<br>
+        <br>
+        <center><input type="text" name="text" required="required">
+	<input type="submit">
+        </center>
+        
+	
+   </form>
+   <br><b><center>{{variable}}</center></b><br>
+</body>
+</html>
